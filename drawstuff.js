@@ -4,6 +4,7 @@
 class Color {
     constructor(r,g,b,a) {
         try {
+		
             if ((typeof(r) !== "number") || (typeof(g) !== "number") || (typeof(b) !== "number") || (typeof(a) !== "number"))
                 throw "color component not a number";
             else if ((r<0) || (g<0) || (b<0) || (a<0)) 
